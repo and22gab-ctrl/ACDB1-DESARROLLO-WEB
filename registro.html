@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Usuario</title>
+</head>
+<body>
+    <h2>Crear una nueva cuenta</h2>
+    <form action="insertar_usuario.php" method="POST">
+        <input type="text" name="nom" placeholder="Nombre" required maxlength="20"><br>
+        <input type="text" name="ape" placeholder="Apellido" required maxlength="20"><br>
+        <input type="text" name="ced" placeholder="Cedula" required maxlength="10"><br>
+        <input type="text" name="tel" placeholder="Teléfono" required maxlength="10"><br>
+        <input type="email" name="correo" placeholder="Correo electrónico" required maxlength="50"><br>
+        <input type="password" name="pass" placeholder="Contraseña" required maxlength="10"><br>
+    
+        <button type="submit">Registrarse</button>
+    </form>
+</body>
+</html>

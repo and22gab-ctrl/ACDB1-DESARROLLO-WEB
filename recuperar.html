@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Recuperar Contraseña</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background-color: #f4f7f6; color: #333; }
+        .box { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); max-width: 400px; margin: 0 auto; }
+        .group { margin-bottom: 15px; }
+        .group label { display: block; font-weight: bold; margin-bottom: 5px; }
+        .group input { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        .btn { background-color: #007BFF; color: white; padding: 10px 15px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; width: 100%; }
+        .btn:hover { background-color: #0056b3; }
+        .link { display: block; text-align: center; margin-top: 15px; color: #666; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h2>Restablecer Contraseña</h2>
+        <p style="font-size: 14px; color: #666;">Confirma tu identidad para ingresar una nueva contraseña.</p>
+        <hr>
+
+        <form action="cambiar_password.php" method="POST">
+            <div class="group">
+                <label>Correo Electrónico:</label>
+                <input type="email" name="correo" required>
+            </div>
+
+            <div class="group">
+                <label>Número de Cédula:</label>
+                <input type="text" name="cedula" required maxlength="10">
+            </div>
+
+            <div class="group">
+                <label>Nueva Contraseña:</label>
+                <input type="password" name="nueva_pass" required>
+            </div>
+
+            <button type="submit" class="btn">🔄 Actualizar Contraseña</button>
+        </form>
+
+        <a href="login.html" class="link">Volver al Login</a>
+    </div>
+
+</body>
+</html>
